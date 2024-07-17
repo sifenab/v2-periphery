@@ -45,7 +45,7 @@ export async function v2Fixture(provider: Web3Provider, [wallet]: Wallet[]): Pro
   const WETHPartner = await deployContract(wallet, ERC20, [expandTo18Decimals(10000)])
 
   // placeholder for swap contract address
-  const swapContract = '0x0000000000000000000000000000000000000000'
+  const swapContract = '0x00000000000000000000000000dead0000000000'
 
   // deploy V1
   const factoryV1 = await deployContract(wallet, UniswapV1Factory, [])
